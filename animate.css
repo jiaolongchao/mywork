@@ -896,8 +896,8 @@
 @-webkit-keyframes zoomIn {
     0% {
         opacity: 0;
-        -webkit-transform: scale3d(.3, .3, .3);
-        transform: scale3d(.3, .3, .3)
+        -webkit-transform: scale3d(.4, .4, .4);
+        transform: scale3d(.4, .4, .4)
     }
     50% {
         opacity: 1
@@ -907,8 +907,8 @@
 @keyframes zoomIn {
     0% {
         opacity: 0;
-        -webkit-transform: scale3d(.3, .3, .3);
-        transform: scale3d(.3, .3, .3)
+        -webkit-transform: scale3d(.4, .4, .4);
+        transform: scale3d(.4, .4, .4)
     }
     50% {
         opacity: 1
@@ -926,7 +926,7 @@
     }
     100%{
         opacity: 1;
-        transform: scale3d(1, 1, 1)
+        -webkit-transform: scale3d(1, 1, 1)
     }
 }
 

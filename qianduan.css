@@ -70,12 +70,12 @@ html,body{
 .scene01 .green_grass{background: url(images2/green_grass.png) no-repeat; }
 #scene01 .green_grass{animation: fadeIn 3.5s backwards;-webkit-animation: fadeIn 3.5s backwards;}
 .scene01 .plum{background: url(images2/plum.png) no-repeat; }
-#scene01 .plum{animation: fadeIn 3.5s backwards;-webkit-animation: fadeIn 3.5s backwards;}
+#scene01 .plum{animation: fadeIn 3.5s backwards; -webkit-animation: fadeIn 3.5s backwards;}
 .scene01 .plum .petal{ position: absolute;}
 .scene01 .plum .petal:nth-child(1){ width: 44px; height: 50px; left: 52px; top: 18px;}
 .scene01 .plum .petal:nth-child(2){width: 41px; height: 46px; left:159px; top: 95px;}
 .scene01 .plum .petal:nth-child(3){width: 43px; height: 46px; left: 156px; top: 163px;}
-#scene01 .plum .petal{animation:zoomIn 3.3s ease 1.6s normal both 1}
+#scene01 .plum .petal{animation:zoomIn 3.3s ease 2.2s normal both 1;-webkit-animation:zoomIn 3.3s ease 2.2s normal both 1;}
 .scene01 .boat{ width: 128px; height: 50px; position: absolute; left: 280px;top: 522px; }
 #scene01 .boat{animation: fadeInLeft  4.5s ease-in backwards 4s;-webkit-animation: fadeInLeft  4.5s ease-in backwards 4s;}
 .scene01 .lotus,.scene01 .lotus-flower{ width: 245px; height: 250px; background: url(images2/lotus.png) no-repeat; position: absolute; left:0;bottom: 0;}
@@ -95,11 +95,11 @@ html,body{
 
 .scene03 .plum{ width: 227px; height: 302px; opacity: 0; position: absolute; right: 0px; top: 0; background: url(images2/plum3.png) no-repeat; z-index: 38}
 #scene03 .plum{ animation: fadeIn 6.5s forwards 2.5s; -wekit-animation: fadeIn 6.5s forwards 2.5s;}
-.scene03 .mist{ position: absolute; top: 0; -webkit-transition: 3s; transition: 3s;}
+.scene03 .mist{ position: absolute; top: 0; transition: 3s; -webkit-transition: 3s;}
 .scene03 .mist:nth-child(1){left: 0;}
 .scene03 .mist:nth-child(2){right: 0; text-align: right;}
-#scene03 .mist:nth-child(1){ left: -640px;}
-#scene03 .mist:nth-child(2){ right: -567px;}
+#scene03 .mist:nth-child(1){ left: -640px; transition: 3s; -webkit-transition: 3s;}
+#scene03 .mist:nth-child(2){ right: -567px; transition: 3s; -webkit-transition: 3s;}
 .scene03 .dropsink{ width: 221px; height: 223px; transform-origin: center;-webkit-transform-origin: center; opacity: 0; left: 9px; top: 346px; position: absolute; background: url(images2/dropsink2.png) no-repeat; }
 #scene03 .dropsink{animation: zoomIn_s 4.5s forwards 6s;-webkit-animation: zoomIn_s 4.5s forwards 6s;}
 .scene03 .sun{ width: 590px; height: 138px; background:url(images2/sun.png) no-repeat; z-index: 35; left:580px; position: absolute;}
