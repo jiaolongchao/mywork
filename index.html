@@ -2,195 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width;inital-scale=1.0,user-scalable=no">
     <title></title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            box-sizing: border-box;
-        }
-
-        #calendar {
-            width: 142px;
-            border: solid 1px red;
-            overflow: hidden;
-            margin: 100px auto;
-        }
-
-        .control {
-            display: block;
-            width: 10px;
-            height: 30px;
-            background: paleturquoise;
-            float: left;
-            cursor: pointer;
-        }
-
-        #montharea {
-            width: 120px;
-            position: relative;
-            height: 30px;
-            overflow: hidden;
-            float: left
-        }
-
-        .mlist {
-            position: absolute;
-            height: 30px;
-            line-height: 30px;
-            left: 0;
-            top: 0;
-        }
-
-        .mlist li {
-            float: left;
-            width: 20px;
-            height: 30px;
-        }
-
-        .mlist li.select {
-            background: deeppink;
-        }
-    </style>
+    <link rel="stylesheet" href="qianduan.css"/>
+    <link rel="stylesheet" href="animate.css"/>
 </head>
 <body>
-<div id="calendar">
-    <span class="left control"></span>
-
-    <div id="montharea">
-        <ul class="mlist">
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-            <li>7</li>
-            <li>8</li>
-            <li>9</li>
-            <li>10</li>
-            <li>11</li>
-            <li>12</li>
-        </ul>
+<div id="main">
+    <div class="off video_exist rotate" id="audio_btn" style="display: block;">
+        <audio preload="" autoplay="" id="media" src="images2/music.mp3" loop=""></audio>
     </div>
-    <span class="rigth control"></span>
+    <ul id="list">
+        <li class="zIndex">
+            <div class="scene01" id="scene01">
+                <div class="green_grass"></div><!--绿草-->
+                <div class="plum">
+                    <span class="petal"><img src="images2/hb1.png"></span><!--花瓣-->
+                    <span class="petal"><img src="images2/hb2.png"></span>
+                    <span class="petal"><img src="images2/hb3.png"></span>
+                </div><!--梅花-->
+                <div class="boat"><img src="images2/boat.png" alt=""/></div>
+                <div class="lotus">
+                    <div class="lotus-flower"><img src="images2/lotus_flower.png" alt=""/></div>
+                </div> <!--荷花-->
+                <div class="title"></div> <!--标题-->
+            </div>
+        </li><!--场景一-->
+        <li class="">
+            <div class="scene02">
+                <div class="flower_disk"><img src="images2/flower_disk.png"> </div><!--花盘-->
+                <div class="plum"><img src="images2/plum2.png"></div><!--梅花-->
+                <div class="dropsink"></div><!--墨滴-->
+                <div class="text">
+                    <p>我是一枚准前端工程师，小白的道路困难重重<br>
+                       薄弱的基础几乎打倒了我起初的梦想
+                    </p>
+                    <!--<img src="images2/text.png ">-->
+                </div>
+                <div class="text2">
+                    <p><br>
+                       很多次想放弃 想就这样吧<br>
+                       找不出口，找不到方向</p>
+                    <!--<img src="images2/text.png ">-->
+                </div>
+            </div>
+        </li><!--场景二-->
+        <li class="">
+            <div class="scene03">
+                <div class="mist"><img src="images2/cloud.png"> </div><!--云雾-->
+                <div class="mist"><img src="images2/cloud2.png"></div><!--云雾-->
+                <div class="plum"><!--梅花-->
+                    <div class="petal"></div><!--花瓣-->
+                    <div class="petal"></div><!--花瓣-->
+                    <div class="petal"></div><!--花瓣-->
+                    <div class="petal"></div><!--花瓣-->
+                </div><!--梅花-->
+                <div class="sun"></div>
+                <div class="dropsink"></div><!--墨滴-->
+                <div class="text">只要坚持学习，终有一天 不畏浮云遮望眼,拔开云雾,你我的世界豁然开朗<br>忌浮躁，磨心性，对我就是一种修行</div>
+            </div>
+        </li><!--场景三-->
+        <li class="">
+            <div class="scene04">
+                <div class="willow"><img src="images2/willow.png"></div>
+                <div class="jinqu"><img src="images2/jinqu.png" alt=""/></div>
+            </div>
+        </li><!--场景四-->
+    </ul>
 </div>
-<!--<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>-->
-<script>
-    /* var vMon = new Date().getMonth() + 1;
-     //var vMon = 8;
-     var $w = $(".mlist > li").width();
-     var $left = $(".mlist").css("left");
-     $(".mlist").css({
-     "width": $w * 12,
-     "left": vMon >= 6 ? -$w * 6 : 0
-     });
-     $(".mlist > li").each(function () {
-     if ($(this).text() == vMon) {
-     $(this).addClass("select").siblings().removeClass("select")
-     }
-     })
-     $(".left,.rigth").click(function () {
-     mAnimate();
-     })
-     function mAnimate() {
-     if (parseInt($left) == 0) {
-     $(".mlist").animate({"left": -$w * 6}, 200);
-     $left = -$w * 6;
-     } else {
-     $(".mlist").animate({"left": 0}, 200)
-     $left = 0;
-     }
-     }*/
-</script>
-<script>
-    /*实现函数 makeClosures，调用之后满足如下条件：
-     1、返回一个函数数组 result，长度与 arr 相同
-     2、运行 result 中第 i 个函数，即 result[i]()，结果与 fn(arr[i]) 相同*/
-    function makeClosures(arr, fn) {
-        var result = [];
-        for (var i = 0; i < arr.length; i++) {
-            ~function (j) {
-                result[j] = function () {
-                    return fn.call(null, arr[j])
-                }
-            }(i)
-        }
-        return result;
-    }
-
-    var arr = [1, 2, 3];
-    var square = function (x) {
-        return x * x;
-    };
-    var funcs = makeClosures(arr, square);
-    funcs[1]();
-    //4
-</script>
-<script>
-    /*已知函数 fn 执行需要 3 个参数。请实现函数 partial，调用之后满足如下条件：
-     1、返回一个函数 result，该函数接受一个参数
-     2、执行 result(str3) ，返回的结果与 fn(str1, str2, str3) 一致*/
-
-    //partial(sayIt, 'Hello', 'Ellie')('!!!');
-    // 首先执行partial(sayIt, 'Hello', 'Ellie')，
-    // 将参数传入，然后返回函数result与('!!!')组合成result('!!!')执行。
-    // 于是，可以在result函数里调用fn，因为函数的参数固定为三个，
-    // 因此可以用call方法去调用函数fn。
-    function partial(fn, str1, str2) {
-        var result = function (str3) {
-            return fn.call(this, str1, str2, str3)
-        }
-        return result;
-    }
-
-    var sayIt = function (greeting, name, punctuation) {
-        return greeting + ', ' + name + (punctuation || '!');
-    };
-    partial(sayIt, 'Hello', 'Ellie')('!!!');
-
-    //Hello, Ellie!!!
-
-</script>
-
-<script>
-    //实现函数 makeClosures，调用之后满足如下条件：
-    //1、返回一个函数数组 result，长度与 arr 相同
-    //2、运行 result 中第 i 个函数，即 result[i]()，结果与 fn(arr[i]) 相同
-    function makeClosures(arr, fn) {
-        var result = [];
-        for (var i = 0; i < arr.length; i++) {
-            ~function (j) {
-                return result[j] = function () {
-                    return fn.call(this, arr[j])
-                }
-            }(i)
-        }
-        return result;
-    }
-    var arr = [1, 2, 3];
-    var square = function (x) {
-        return x * x;
-    };
-    var funcs = makeClosures(arr, square);
-    funcs[1]();
-</script>
-
-<script>
-    //实现函数 callIt，调用之后满足如下条件
-    //1、返回的结果为调用 fn 之后的结果
-    //2、fn 的调用参数为 callIt 的第一个参数之后的全部参数
-    function callIt(fn) {
-       return fn.call(null,arguments)
-    }
-    var a = 1;
-    var b = 2;
-    var test = function (first, second) {
-        return first === a && second === b;
-    };
-    callIt(test, a, b);
-    //true
-</script>
 </body>
 </html>
+<script src="qianduan.js"></script>
