@@ -48,6 +48,7 @@ html,body{
 }
 .rotate {
     animation:rotating 1.2s linear 0s normal none infinite ;
+    -webkit-animation:rotating 1.2s linear 0s normal none infinite;
 }
 
 #list li:nth-child(1){
@@ -94,14 +95,14 @@ html,body{
 
 .scene03 .plum{ width: 227px; height: 302px; opacity: 0; position: absolute; right: 0px; top: 0; background: url(images2/plum3.png) no-repeat; z-index: 38}
 #scene03 .plum{ animation: fadeIn 6.5s forwards 2.5s; -wekit-animation: fadeIn 6.5s forwards 2.5s;}
-.scene03 .mist{ position: absolute; top: 0;}
-.scene03 .mist:nth-child(1){left: 0; transition: 3s;}
-.scene03 .mist:nth-child(2){right: 0; transition: 3s;}
+.scene03 .mist{ position: absolute; top: 0; -webkit-transition: 3s; transition: 3s;}
+.scene03 .mist:nth-child(1){left: 0;}
+.scene03 .mist:nth-child(2){right: 0; text-align: right;}
 #scene03 .mist:nth-child(1){ left: -640px;}
 #scene03 .mist:nth-child(2){ right: -567px;}
-.scene03 .dropsink{ width: 221px; height: 223px; transform-origin: center; opacity: 0; left: 9px; top: 346px; position: absolute; background: url(images2/dropsink2.png) no-repeat; }
+.scene03 .dropsink{ width: 221px; height: 223px; transform-origin: center;-webkit-transform-origin: center; opacity: 0; left: 9px; top: 346px; position: absolute; background: url(images2/dropsink2.png) no-repeat; }
 #scene03 .dropsink{animation: zoomIn_s 4.5s forwards 6s;-webkit-animation: zoomIn_s 4.5s forwards 6s;}
-.scene03 .sun{ width: 100%; height: 138px; background:url(images2/sun.png) no-repeat; z-index: 35; left:580px; position: absolute;}
+.scene03 .sun{ width: 590px; height: 138px; background:url(images2/sun.png) no-repeat; z-index: 35; left:580px; position: absolute;}
 #scene03 .sun{animation: fadeInRight_s 4.5s forwards 1s; -webkit-animation: fadeInRight_s 4.5s forwards 1s;}
 .scene03 .text{ font-size: 24px;position: absolute;top: 376px; left: 292px; line-height: 1.8; width: 285px; padding: 5px; }
 #scene03 .text{animation: wobble 4.5s backwards 5s;-webkit-animation: wobble 4.5s backwards 5s;}
