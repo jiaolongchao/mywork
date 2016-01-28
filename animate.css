@@ -870,7 +870,7 @@
     animation-name: fadeInDown
 }
 
-@-webkit-keyframes fadeIn {
+@keyframes fadeIn {
     0% {
         opacity: 0
     }
@@ -878,8 +878,7 @@
         opacity: 1
     }
 }
-
-@keyframes fadeIn {
+@-webkit-keyframes fadeIn {
     0% {
         opacity: 0
     }
@@ -2117,7 +2116,7 @@
         -webkit-filter: blur(0px)
     }
 }
-@keyframes rotating {
+@-webkit-keyframes rotating {
     0% {
         transform: rotate(0deg);
     }
