@@ -1,6 +1,7 @@
 *{
     margin:0;
     padding: 0;
+    list-style: none;
 }
 html,body{
     width: 100%;
@@ -16,6 +17,7 @@ html,body{
     margin-left:-320px;
     transform-origin: top;
     -webkit-transform-origin: top;/*改变缩放的基准点*/
+    overflow: hidden;
 }
 #list > li,#loading{
     width: 100%;
