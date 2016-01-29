@@ -105,8 +105,8 @@ html,body{
 #scene03 .dropsink{animation: zoomIn_s 4.5s forwards 6s;-webkit-animation: zoomIn_s 4.5s forwards 6s;}
 .scene03 .sun{ width: 590px; height: 138px; background:url(images2/sun.png) no-repeat; z-index: 35; left:580px; position: absolute;}
 #scene03 .sun{animation: fadeInRight_s 4.5s forwards 1s; -webkit-animation: fadeInRight_s 4.5s forwards 1s;}
-.scene03 .text{ font-size: 24px;position: absolute;top: 376px; left: 292px; line-height: 1.8; width: 285px; padding: 5px; }
-#scene03 .text{animation: wobble 4.5s backwards 5s;-webkit-animation: wobble 4.5s backwards 5s;}
+.scene03 .text{ font-size: 24px;position: absolute;top: 376px; left: 292px; line-height: 1.8; width: 285px; padding: 5px; opacity: 0;}
+#scene03 .text{animation: wobble 4.5s backwards 5s;-webkit-animation: wobble 4.5s backwards 5s; opacity: 1}
 .scene03 .text:before,.scene03 .text:after{ content: ''; width: 10px; height: 10px; position: absolute; }
 .scene03 .text:before{ border-top:solid 3px #000; border-left: solid 3px #000; left: -10px;}
 .scene03 .text:after{ border-bottom:solid 3px #000; border-right: solid 3px #000; bottom: 0;right: 0;}

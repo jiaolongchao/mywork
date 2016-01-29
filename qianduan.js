@@ -30,7 +30,7 @@ function fnLoad(){
                 loading=null;
                 media.play();
                 secinebody();
-               // lifirst.id = "scene01";
+                lifirst.id = "scene01";
             }
         }
     }
