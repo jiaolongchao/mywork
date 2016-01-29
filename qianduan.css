@@ -28,7 +28,7 @@ html,body{
     background-repeat:no-repeat ;
 
 }
-#loading{ z-index: 300; text-align: center; padding-top: 50%;}
+#loading{ z-index: 300; text-align: center; padding-top: 50%; }
 .zIndex{
     z-index: 50;
 }

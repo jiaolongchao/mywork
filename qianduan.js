@@ -28,9 +28,9 @@ function fnLoad(){
             if(num ==11&&loading){
                 loading.parentNode.removeChild(loading);
                 loading=null;
-                lifirst.id = "scene01";
                 media.play();
                 secinebody();
+               // lifirst.id = "scene01";
             }
         }
     }
